@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+    </head>
+    <body>
+        <form>
+            <input  type="text" id="nameOne"  placeholder="name"/><br/>
+            <input type="text" id="nameTwo"  placeholder="age"/><br/>
+            <button type="button"onclick="application()">Submit</button>
+            
+            <h3>RESULT</h3>
+            <p id="result"></p>
+
+         
+            
+        </form>
+        <script>
+            function application(){
+                
+                var ageNode = document.getElementById('nameTwo');
+                age =  ageNode.value;
+
+            
+            {var app = "";
+			if(age >=12 && age <=19)
+			{
+				display = 'Display the message: Welcome to the application!';
+			}
+			else if(age <12)
+			{
+				display = 'Display the message: You are too young for this application!';
+			}
+			else if(age > 19)
+			{
+				display = 'display the message: You are too old for this application!';
+			}
+			else 
+			{
+                display = 'nothing';
+            }
+            var resultNode = document.getElementById('result');
+			resultNode.innerHTML = display + '  Age: ' + age ;
+                    }
+        }
+        
+        
+        </script>
+
+
+    </body>
+
+
+</html>
